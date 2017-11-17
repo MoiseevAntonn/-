@@ -1,8 +1,8 @@
 PORT   = 10010
 TARGET = t.abs
    
-$(TARGET): dft0_tst.c dft0.s
-	nmc-g++ -x none dft0.s -x c dft0_tst.c -o$(TARGET) -lm
+$(TARGET): mmm_tst.c mmm.s
+	nmc-g++ -x none mmm.s -x c mmm_tst.c -o$(TARGET) -lm
 
 clean: 
 	rm $(TARGET) dump
@@ -27,7 +27,7 @@ debug: $(TARGET)
 		-ex='load $(TARGET)' \
 		-ex='file $(TARGET)' \
 		-ex='b*(start+6)' \
-		-ex='b*(0x8e)' \
+		-ex='b*(0x92)' \
                 -ex='cont' \
                 -ex='p $$gr0' \
 		-ex='p $$gr4'
