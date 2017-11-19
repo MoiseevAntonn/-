@@ -3,7 +3,7 @@ int mtc(int a,int b,int c);
 
 int main()
 {	
-	int a = 333;
+	int a = 33;
 	int b = 7;
 	int c = 99;
 	int d = mtc(a,b,c);

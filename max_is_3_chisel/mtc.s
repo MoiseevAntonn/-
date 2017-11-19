@@ -9,7 +9,7 @@ begin ".text"
 	gr7 = [--ar0];
 	gr1 = [--ar0];
 	gr2 = [--ar0];
-	gr3 = gr1 - gr0;
+	gr3 = gr1 - gr7;
 	if > goto label1;
 	goto label2;
 <label1>
