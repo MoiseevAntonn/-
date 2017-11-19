@@ -1,9 +1,12 @@
-void mtc(int *array);
+#include <stdio.h>
+int mtc(int a,int b,int c);
 
 int main()
 {	
-	int a = 3;
-	int b[3] = {1,333,99};
-	mtc(b);
-	return 0;
+	int a = 333;
+	int b = 7;
+	int c = 99;
+	int d = mtc(a,b,c);
+	printf("%d", d);
+	return d;
 }

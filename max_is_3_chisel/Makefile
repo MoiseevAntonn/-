@@ -27,9 +27,9 @@ debug: $(TARGET)
 		-ex='load $(TARGET)' \
 		-ex='file $(TARGET)' \
 		-ex='b*(start+6)' \
-		-ex='b*(0x8c)' \
+		-ex='b*(0x7c)' \
                 -ex='cont' \
-                -ex='p $$gr4'
+                -ex='p $$gr7'
  
                 
 nmgdb:
