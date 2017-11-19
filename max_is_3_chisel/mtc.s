@@ -5,6 +5,7 @@ begin ".text"
 	push ar3, gr3;
 	push ar2, gr2;
 	push ar1, gr1;
+	push ar0, gr0;
 	gr7 = [--ar0];
 	gr1 = [--ar0];
 	gr2 = [--ar0];
@@ -20,6 +21,7 @@ begin ".text"
 <label3>
 	gr7 = gr2;				
 <exit_mtc>
+	pop ar0, gr0;
 	pop ar1, gr1;
 	pop ar2, gr2;
 	pop ar3, gr3;
