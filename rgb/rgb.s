@@ -33,7 +33,7 @@ begin ".text"
 	fpu 0 rep vlen vreg0 = [ar0++gr0];
 	fpu 0 rep vlen [ar2++] = vreg0;
 	ar0 = A;
-	ar0 = ar0 + 1;
+	ar0 = ar0 + 2;
 	fpu 0 rep vlen vreg0 = [ar0++gr0];
 	fpu 0 rep vlen [ar3++] = vreg0;
 	ar0 = A;
