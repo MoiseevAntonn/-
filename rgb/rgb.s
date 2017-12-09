@@ -31,11 +31,11 @@ begin ".text"
 	ar0 = A;
 	ar0 = ar0 + 1;
 	fpu 0 rep vlen vreg0 = [ar0++gr0];
-	fpu 0 rep vlen [ar1++] = vreg0;
+	fpu 0 rep vlen [ar2++] = vreg0;
 	ar0 = A;
 	ar0 = ar0 + 1;
 	fpu 0 rep vlen vreg0 = [ar0++gr0];
-	fpu 0 rep vlen [ar1++] = vreg0;
+	fpu 0 rep vlen [ar3++] = vreg0;
 	ar0 = A;
 <exit_rgb>
 	pop ar3, gr3;
