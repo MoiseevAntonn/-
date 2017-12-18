@@ -1,9 +1,10 @@
 
-void rgb();
-
+void rgb(int num, double *array);
+double array[9] = {6,9,3,4,5,8,11,12,13};
 int main()
 {	
-	rgb();
+	int num = 3;
+	rgb(num,array);
 	return 0;
 }
 	

@@ -27,7 +27,7 @@ debug: $(TARGET)
 		-ex='load $(TARGET)' \
 		-ex='file $(TARGET)' \
 		-ex='b*(start+6)' \
-		-ex='b*(0x7b)' \
+		-ex='b*(0x6d)' \
                 -ex='cont' \
                 
  
